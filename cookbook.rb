@@ -4,7 +4,9 @@ Cookbook = Class.new do
 	attr_accessor :title
 	def initialize(title)
 		@title = title
+		@recipes = []
 	end
+	attr_accessor :recipes
 end
 
 Recipe = Class.new do
