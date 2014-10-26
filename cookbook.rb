@@ -7,6 +7,9 @@ Cookbook = Class.new do
 		@recipes = []
 	end
 	attr_accessor :recipes
+	def add_recipe(new_recipe)
+		@recipes.push(new_recipe)
+	end
 end
 
 Recipe = Class.new do
